@@ -1,0 +1,91 @@
+section {
+    max-inline-size: 1388px;
+}
+
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-block-start: 1.5rem;
+}
+
+/* 每個影片預覽圖 */
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists .playlist {  
+    block-size: 200px;
+    flex: 0 1 210px;
+}
+
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists .playlist a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists .playlist a .playlist__img {
+    position: relative;
+    inline-size: 210px;
+    block-size: 118px;
+}
+
+/* 每個影片播放清單的數目 */
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists .playlist a .playlist__img .showVideoCount{
+    inline-size: 45%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    color: hsla(0, 0%, 100%, 1);
+}
+
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists .playlist a .playlist__img .showVideoCount span {
+    padding: 0.25rem;
+    font-size: 1.1rem;
+}
+/* 每個影片播放清單的數目 */
+
+/* 每個影片hover出現全部撥放 */
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists .playlist a .playlist__img .hidden__action {
+    opacity: 0;
+    transition: opacity 0.15s;
+    position: absolute;
+    inset: 0;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists .playlist a .playlist__img .hidden__action:hover {
+    opacity: 1;
+}
+
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists .playlist a .playlist__img .hidden__action span {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    font-size: 0.85rem;
+}
+/* 每個影片hover出現全部撥放 */
+
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists .playlist a .playlist__title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section .channelNav .wrapdivs .wrapdiv .wrapdiv__playlists .playlist a .playlist__title h4 span {
+    font-size: 0.9rem;
+    color: hsla(0, 0%, 0%, 1);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* 每個影片預覽 */

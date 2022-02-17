@@ -1,0 +1,46 @@
+/* tab */
+section .channelNav .tabs {
+    position: relative;
+    border-radius: 0.2rem;
+    display: flex;
+    margin-block-end: calc(1.5rem - 9px);
+}
+
+section .channelNav .tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    inline-size: 54px;
+    block-size: 3px;
+    background-color: hsla(0, 0%, 35%, 1);
+    border-radius: 30px;
+    transition: left .3s ease-in,
+                width .3s ease-in;
+}
+
+section .channelNav .tabs .tab {
+    cursor: pointer;
+    padding-block: 9px;
+    padding-inline: 12px;
+    font-size: 0.95rem;
+    color: hsla(0, 0%, 50%, 1);
+}
+
+section .channelNav .tabs .tab:hover {
+    color: hsla(0, 0%, 0%, 1);
+}
+
+section .channelNav .tabs .tab.active {
+    color: hsla(0, 0%, 0%, 1);
+}
+/* tab */
+
+/* wrapdiv */
+section .channelNav .wrapdivs .wrapdiv {
+    display: none;
+}
+
+section .channelNav .wrapdivs .wrapdiv.active {
+    display: block;
+}
+/* wrapdiv */

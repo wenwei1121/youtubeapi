@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playlist</title>
+    <script src="https://kit.fontawesome.com/700b82712d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/tab.css">
+    <link rel="stylesheet" href="./css/main.css">    
+    <link rel="stylesheet" href="./css/videos.css">
+    <link rel="stylesheet" href="./css/playlist.css">
+</head>
+<body>
+    <header>
+        <div class="runLine">
+            <div class="runLine__action"></div>
+        </div>
+        <h1>
+            <img src="./image/YouTube-Logo.png" alt="Youtube首頁">
+        </h1>
+    </header>
+    <section>
+        <div class="channelNav">
+            <ul class="tabs">
+                <div class="indicator"></div>
+                <li class="active tab">
+                    <span>影片</span>
+                    <!-- <a href="index.html" class="tab">影片</a> -->
+                </li>
+                <li class="tab">
+                    <span>播放清單</span>
+                    <!-- <a href="playlist.html" class="active tab">播放清單</a> -->
+                </li>
+            </ul>
+            <div class="wrapdivs">
+                <div class="active wrapdiv">
+                    <div class="wrapdiv__action">
+                        <span>上傳</span>
+                        <button class="allplayBtn">全部播放</button>
+                    </div>
+                    <div class="wrapdiv__videos"></div>
+                </div>
+                <div class="wrapdiv">
+                    <div class="wrapdiv__action">
+                        <span>以建立的播放清單</span>
+                    </div>
+                    <div class="wrapdiv__playlists"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/playlist.js"></script>
+</body>
+</html>
